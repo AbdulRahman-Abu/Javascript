@@ -1,0 +1,32 @@
+ZETO TO MASTERY: ANDREI 
+
+forEach seems preferable
+
+Two scenarios
+
+var counter = [
+    "pray",
+    "brush teeth",
+    "eat food",
+    "bath",
+    "book uber"
+];
+counter.forEach(function(todo) {
+    console.log(todo);
+})
+
+for (i = 0; i < counter.length; i++) {
+    counter[i] = counter[i] + "!";
+};
+
+TO ACCESS THE INDEX IN FOREACH
+counter.forEach(function(todo, i) {
+    console.log(todo,i);
+})
+
+USING FUNCTIONS TO SIMPLIFY FOREACH
+counter.forEach(logTodos);
+function logTodos(todo,i) {
+    console.log(todo, i);
+}
+The function can be reused and that is a good thing
